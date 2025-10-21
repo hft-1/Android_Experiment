@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hft.experiment2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Experiment2">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 确保以下Activity都已注册 -->
+        <activity android:name=".LinearLayoutActivity" />
+        <activity android:name=".TableLayoutActivity" />
+        <activity android:name=".ConstraintLayout1Activity" />
+        <activity android:name=".ConstraintLayout2Activity" />
+
+    </application>
+
+</manifest>
