@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">experiment3</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_10">小</string>
+    <string name="font_16">中</string>
+    <string name="font_20">大</string>
+    <string name="plain_item">普通菜单项</string>
+    <string name="font_color">字体颜色</string>
+    <string name="red_font">红色</string>
+    <string name="black_font">黑色</string>
+    <string name="menu_test_title">MenuTest</string>
+    <string name="test_content">用于测试的内容</string>
+    <string name="android_app">Android APP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="cancel">Cancel</string>
 </resources>

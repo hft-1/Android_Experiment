@@ -1,8 +1,16 @@
 package com.hft.experiment3;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -19,6 +27,42 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button btnMenuTest = findViewById(R.id.btn_menu_test);
+        btnMenuTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, OptionMenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnAlertDialog = findViewById(R.id.btn_alert_dialog);
+        btnAlertDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AlertDialogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnActionMode = findViewById(R.id.btn_action_mode);
+        btnActionMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ActionModeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnSimpleAdapter = findViewById(R.id.btn_simple_adapter);
+        btnSimpleAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SimpleAdapterActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
