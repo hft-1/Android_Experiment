@@ -1,1 +1,2 @@
 # Android_Experiment
+三个实验分别在三个分支中，每个分支都有一个实验名的MarkDown文件来说明讲解实验的具体内容与步骤，不是README.md文件哦。
